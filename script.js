@@ -1,27 +1,69 @@
-(function(){
-  var WA="254728549825", MAIL="pndonye08@gmail.com";
-  var f=document.getElementById("quote"), err=document.getElementById("err");
-  document.getElementById("yr").textContent=new Date().getFullYear();
-  function val(id){return document.getElementById(id).value.trim();}
-  function build(){
-    return "Quote request - NexMove Logistics\n"+
-      "Name: "+val("name")+"\nPhone: "+val("phone")+"\nPickup: "+val("from")+"\nDelivery: "+val("to")+
-      "\nService: "+val("type")+"\nCargo/weight: "+val("weight")+(val("notes")?"\nNotes: "+val("notes"):"");
-  }
-  function ok(){
-    var miss=[["name","your name"],["phone","your phone number"],["from","the pickup location"],["to","the delivery location"]]
-      .filter(function(p){return !val(p[0]);});
-    if(miss.length){err.textContent="Please add "+miss[0][1]+".";document.getElementById(miss[0][0]).focus();return false;}
-    err.textContent="";return true;
-  }
-  f.addEventListener("submit",function(e){
-    e.preventDefault();
-    if(!ok())return;
-    window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(build()),"_blank","noopener");
-  });
-  document.getElementById("mailLink").addEventListener("click",function(e){
-    e.preventDefault();
-    if(!ok())return;
-    window.location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Quote request")+"&body="+encodeURIComponent(build());
-  });
-})();
+// ======================================
+// MOBILE MENU
+// ======================================
+
+const menuBtn = document.querySelector(".mobile-menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+
+if (menuBtn && navMenu) {
+
+    menuBtn.addEventListener("click", () => {
+
+        navMenu.classList.toggle("active");
+
+    });
+
+}
+
+
+
+// ======================================
+// QUOTE FORM -> WHATSAPP
+// ======================================
+
+const quoteForm = document.getElementById("quoteForm");
+
+if (quoteForm) {
+
+    quoteForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        // Get values
+        const name = document.getElementById("name").value;
+        const company = document.getElementById("company").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const service = document.getElementById("service").value;
+        const message = document.getElementById("message").value;
+
+        // WhatsApp number
+        const whatsappNumber = "254728549825";
+
+        // Create message
+        const whatsappMessage =
+`Hello Nex Move Logistics Limited,
+
+I would like to request a quotation.
+
+Name: ${name}
+Company: ${company}
+Email: ${email}
+Phone: ${phone}
+Service Required: ${service}
+
+Requirements:
+${message}`;
+
+        // Encode text
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Open WhatsApp
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+}

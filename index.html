@@ -1,94 +1,1331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>NexMove Logistics Limited</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Nex Move Logistics Limited provides reliable transport, logistics and fleet solutions for businesses.">
+
+    <meta name="keywords"
+        content="Nex Move Logistics, transport, logistics, fleet solutions, cargo, Kenya">
+
+    <meta name="author" content="Nex Move Logistics Limited">
+
+    <title>Nex Move Logistics Limited | Your Cargo, Our Commitment</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-<header>
-  <div class="wrap">
-    <div class="bar">
-      <a class="brand" href="#top">Nex<span>Move</span> Logistics</a>
-      <nav aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#why">Why us</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="#quote">Get a quote</a>
-      </nav>
-    </div>
-    <div class="hero" id="top">
-      <div>
-        <h1>Your cargo, our commitment.</h1>
-        <p class="lead">Transport, logistics and fleet solutions for businesses that need their goods to arrive on time and intact.</p>
-        <ul class="badges"><li>Transport</li><li>Logistics</li><li>Fleet solutions</li></ul>
-      </div>
-      <form class="quote" id="quote" novalidate>
-        <h2>Request a quote</h2>
-        <p class="sub">Tell us about your cargo. We reply on WhatsApp or email.</p>
-        <div class="grid two">
-          <div><label for="name">Your name</label><input id="name" autocomplete="name"></div>
-          <div><label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel"></div>
-          <div><label for="from">Pickup location</label><input id="from"></div>
-          <div><label for="to">Delivery location</label><input id="to"></div>
-          <div><label for="type">Service</label>
-            <select id="type"><option>Transport</option><option>Logistics</option><option>Fleet solutions</option></select></div>
-          <div><label for="weight">Cargo and weight</label><input id="weight" placeholder="e.g. 5 tonnes of pallets"></div>
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+
+            <!-- LOGO -->
+
+            <a href="#home" class="logo">
+
+                <div class="logo-symbol">
+                    N
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>NEX MOVE</strong>
+
+                    <span>LOGISTICS LIMITED</span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu">
+
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#why-us">
+                    Why Us
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="#quote" class="nav-quote">
+                    Request a Quote
+                </a>
+
+            </nav>
+
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button class="mobile-menu-btn" aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
         </div>
-        <div style="margin-top:12px"><label for="notes">Extra details (optional)</label><textarea id="notes"></textarea></div>
-        <p class="err" id="err" role="alert"></p>
-        <button class="btn" type="submit">Send on WhatsApp</button>
-        <p class="alt">Prefer email? <a href="#" id="mailLink">Send by email instead</a></p>
-      </form>
-    </div>
-  </div>
-  <div class="road" aria-hidden="true"></div>
-</header>
 
-<main>
-  <section id="services">
-    <div class="wrap">
-      <h2>What we do</h2>
-      <p class="intro">Three services, built around moving business cargo reliably.</p>
-      <div class="services">
-        <!-- SERVICE IMAGES: replace the three src files below with your own photos -->
-        <div class="svc"><img src="./Images/cargo truck.webp" alt="NexMove cargo truck"><h3>Transport</h3><p>Road transport for your goods, from single loads to regular routes, with clear pickup and delivery times.</p></div>
-        <div class="svc"><img src="./Images/warehouse and logistics.webp" alt="Warehouse and logistics"><h3>Logistics</h3><p>We plan and coordinate the movement of your cargo so you can focus on running your business.</p></div>
-        <div class="svc"><img src="./Images/fleet.webp" alt="NexMove fleet"><h3>Fleet solutions</h3><p>Vehicles and capacity arranged around your needs, whether you need one truck or a dedicated fleet.</p></div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="why" id="why">
-    <div class="wrap whygrid">
-      <div>
-        <h2>Built for businesses</h2>
-        <ul>
-          <li>Your cargo is treated as your reputation, because it is.</li>
-          <li>One point of contact from quote to delivery.</li>
-          <li>Quotes handled directly on WhatsApp or email, no forms to chase.</li>
-        </ul>
-      </div>
-      <!-- ABOUT IMAGE: replace this src with your own photo (e.g. images/team.jpg) -->
-      <img src="./Images/road.webp" alt="NexMove on the road">
-    </div>
-  </section>
-</main>
 
-<footer id="contact">
-  <div class="wrap">
-    <h2>Talk to NexMove</h2>
-    <div class="contact">
-      <div>Phone / WhatsApp: <a href="tel:+254728549825">+254 728 549 825</a></div>
-      <div>Email: <a href="mailto:pndonye08@gmail.com">pndonye08@gmail.com</a></div>
-    </div>
-    <p class="copy">&copy; <span id="yr"></span> NexMove Logistics Limited. Your cargo, our commitment.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="hero-image">
+
+                <img
+                    src="./Images/cargo truck.webp"
+                    alt="Nex Move Logistics transport truck">
+
+            </div>
+
+
+            <!-- DARK OVERLAY -->
+
+            <div class="hero-overlay"></div>
+
+
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text">
+
+
+                    <div class="hero-label">
+
+                        <span></span>
+
+                        TRANSPORT • LOGISTICS • FLEET SOLUTIONS
+
+                    </div>
+
+
+
+                    <h1>
+
+                        Moving Business.
+
+                        <br>
+
+                        <span>Moving Forward.</span>
+
+                    </h1>
+
+
+
+                    <p>
+
+                        Reliable transport and logistics solutions
+                        designed to keep your cargo moving and your
+                        business operating without interruption.
+
+                    </p>
+
+
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#quote" class="btn btn-primary">
+
+                            Request a Quote
+
+                            <span>→</span>
+
+                        </a>
+
+
+
+                        <a href="#services" class="btn btn-light">
+
+                            Explore Our Services
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- HERO CONTACT -->
+
+                    <div class="hero-contact">
+
+
+                        <div>
+
+                            <small>
+                                CALL US
+                            </small>
+
+                            <a href="tel:+254728549825">
+
+                                +254 728 549 825
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="hero-divider"></div>
+
+
+                        <div>
+
+                            <small>
+                                EMAIL
+                            </small>
+
+                            <a href="mailto:pndonye08@gmail.com">
+
+                                pndonye08@gmail.com
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <span>
+                            Reliable
+                            <br>
+                            Transport
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <span>
+                            Smart Logistics
+                            <br>
+                            Solutions
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <span>
+                            Fleet
+                            <br>
+                            Solutions
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==========================================
+             TRUST BAR
+        =========================================== -->
+
+        <section class="trust-bar">
+
+            <div class="container trust-container">
+
+
+                <div class="trust-intro">
+
+                    <span>
+                        NEX MOVE
+                    </span>
+
+                    <p>
+                        Your cargo, our commitment.
+                    </p>
+
+                </div>
+
+
+
+                <div class="trust-item">
+
+                    <div class="trust-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Reliable
+                        </strong>
+
+                        <span>
+                            Service
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="trust-item">
+
+                    <div class="trust-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Business
+                        </strong>
+
+                        <span>
+                            Focused
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="trust-item">
+
+                    <div class="trust-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Professional
+                        </strong>
+
+                        <span>
+                            Solutions
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="trust-item">
+
+                    <div class="trust-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Customer
+                        </strong>
+
+                        <span>
+                            Commitment
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SERVICES
+        =========================================== -->
+
+        <section class="services section" id="services">
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+
+                    <div>
+
+                        <span class="section-label">
+                            OUR SERVICES
+                        </span>
+
+                        <h2>
+                            Logistics solutions
+                            <br>
+                            built for business.
+                        </h2>
+
+                    </div>
+
+
+
+                    <div class="section-description">
+
+                        <p>
+
+                            We provide dependable transport and
+                            logistics solutions designed around
+                            the needs of modern businesses.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SERVICE GRID -->
+
+                <div class="services-grid">
+
+
+                    <!-- TRANSPORT -->
+
+                    <article class="service-card">
+
+
+                        <div class="service-image">
+
+                            <img
+                                src="./Images/warehouse and logistics.webp"
+                                alt="Transport services">
+
+                            <span class="service-number">
+                                01
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="service-content">
+
+                            <span class="service-category">
+                                TRANSPORT
+                            </span>
+
+                            <h3>
+                                Transport Solutions
+                            </h3>
+
+                            <p>
+
+                                Dependable transportation solutions
+                                that help move your cargo safely and
+                                efficiently from one destination to another.
+
+                            </p>
+
+                            <a href="#quote" class="service-link">
+
+                                Request Service
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- LOGISTICS -->
+
+                    <article class="service-card">
+
+
+                        <div class="service-image">
+
+                            <img
+                                src="./Images/log and operations.webp"
+                                alt="Logistics services">
+
+                            <span class="service-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="service-content">
+
+                            <span class="service-category">
+                                LOGISTICS
+                            </span>
+
+                            <h3>
+                                Logistics Management
+                            </h3>
+
+                            <p>
+
+                                Coordinated logistics support focused
+                                on efficiency, planning and reliable
+                                movement of goods.
+
+                            </p>
+
+                            <a href="#quote" class="service-link">
+
+                                Request Service
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- FLEET -->
+
+                    <article class="service-card">
+
+
+                        <div class="service-image">
+
+                            <img
+                                src="./Images/fleet.webp"
+                                alt="Fleet solutions">
+
+                            <span class="service-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="service-content">
+
+                            <span class="service-category">
+                                FLEET SOLUTIONS
+                            </span>
+
+                            <h3>
+                                Fleet Solutions
+                            </h3>
+
+                            <p>
+
+                                Practical fleet solutions designed
+                                to support efficient transportation
+                                operations for businesses.
+
+                            </p>
+
+                            <a href="#quote" class="service-link">
+
+                                Request Service
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             ABOUT
+        =========================================== -->
+
+        <section class="about section" id="about">
+
+            <div class="container about-grid">
+
+
+                <!-- IMAGE -->
+
+                <div class="about-image">
+
+                    <img
+                        src="./Images/log management.webp"
+                        alt="Nex Move Logistics operations">
+
+                    <div class="about-experience">
+
+                        <strong>
+                            NEX
+                        </strong>
+
+                        <span>
+                            MOVE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTENT -->
+
+                <div class="about-content">
+
+
+                    <span class="section-label">
+                        ABOUT NEX MOVE
+                    </span>
+
+
+                    <h2>
+
+                        More than logistics.
+
+                        <br>
+
+                        <span>
+                            We move your business forward.
+                        </span>
+
+                    </h2>
+
+
+
+                    <p class="about-lead">
+
+                        At Nex Move Logistics Limited, we understand
+                        that logistics is not simply about moving cargo.
+
+                    </p>
+
+
+
+                    <p>
+
+                        It is about keeping businesses connected,
+                        operations running and commitments fulfilled.
+                        We provide transport, logistics and fleet
+                        solutions designed to support businesses
+                        with dependable and practical transportation
+                        services.
+
+                    </p>
+
+
+
+                    <div class="about-points">
+
+
+                        <div>
+
+                            <span>
+                                01
+                            </span>
+
+                            <strong>
+                                Business Focused
+                            </strong>
+
+                            <p>
+                                Solutions designed around your
+                                operational requirements.
+                            </p>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <span>
+                                02
+                            </span>
+
+                            <strong>
+                                Reliable Service
+                            </strong>
+
+                            <p>
+                                We understand the importance of
+                                dependable cargo movement.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <a href="#quote" class="text-link">
+
+                        Work With Us
+
+                        <span>→</span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             WHY CHOOSE US
+        =========================================== -->
+
+        <section class="why-us section" id="why-us">
+
+            <div class="container">
+
+
+                <div class="why-header">
+
+                    <span class="section-label">
+                        WHY NEX MOVE
+                    </span>
+
+                    <h2>
+                        A logistics partner
+                        <br>
+                        you can count on.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="why-grid">
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">
+                            01
+                        </span>
+
+                        <div class="why-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            Reliability
+                        </h3>
+
+                        <p>
+
+                            We focus on dependable transportation
+                            solutions that businesses can plan around.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">
+                            02
+                        </span>
+
+                        <div class="why-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Efficiency
+                        </h3>
+
+                        <p>
+
+                            Our approach is built around practical
+                            logistics and efficient cargo movement.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">
+                            03
+                        </span>
+
+                        <div class="why-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Commitment
+                        </h3>
+
+                        <p>
+
+                            Your cargo represents your business.
+                            We treat that responsibility seriously.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="why-card">
+
+                        <span class="why-number">
+                            04
+                        </span>
+
+                        <div class="why-icon">
+                            ↗
+                        </div>
+
+                        <h3>
+                            Partnership
+                        </h3>
+
+                        <p>
+
+                            We aim to build lasting relationships
+                            with the businesses we serve.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CTA
+        =========================================== -->
+
+        <section class="cta">
+
+            <div class="container cta-container">
+
+
+                <div>
+
+                    <span class="section-label">
+                        READY TO MOVE?
+                    </span>
+
+                    <h2>
+                        Let's move your business forward.
+                    </h2>
+
+                </div>
+
+
+
+                <a href="#quote" class="btn btn-primary">
+
+                    Request a Quote
+
+                    <span>→</span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             QUOTE SECTION
+        =========================================== -->
+
+        <section class="quote section" id="quote">
+
+            <div class="container quote-grid">
+
+
+                <!-- LEFT -->
+
+                <div class="quote-info">
+
+                    <span class="section-label">
+                        REQUEST A QUOTE
+                    </span>
+
+                    <h2>
+                        Tell us what
+                        <br>
+                        you need moved.
+                    </h2>
+
+                    <p>
+
+                        Give us a few details about your
+                        transportation or logistics requirement
+                        and we'll get back to you.
+
+                    </p>
+
+
+
+                    <div class="contact-box">
+
+
+                        <div>
+
+                            <span>
+                                CALL
+                            </span>
+
+                            <a href="tel:+254728549825">
+                                +254 728 549 825
+                            </a>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <span>
+                                EMAIL
+                            </span>
+
+                            <a href="mailto:pndonye08@gmail.com">
+                                pndonye08@gmail.com
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <div class="quote-form-wrapper">
+
+
+                    <form id="quoteForm">
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="company">
+                                    Company
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    placeholder="Company name">
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@company.com"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="+254..."
+                                    required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="service">
+                                Service Required
+                            </label>
+
+                            <select id="service" name="service" required>
+
+                                <option value="">
+                                    Select a service
+                                </option>
+
+                                <option value="Transport">
+                                    Transport
+                                </option>
+
+                                <option value="Logistics">
+                                    Logistics
+                                </option>
+
+                                <option value="Fleet Solutions">
+                                    Fleet Solutions
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell us about your requirement
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us about your cargo, route, quantity or requirements..."></textarea>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary submit-btn">
+
+                            Submit Quote Request
+
+                            <span>→</span>
+
+                        </button>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-main">
+
+
+            <div class="footer-brand">
+
+
+                <a href="#home" class="logo">
+
+                    <div class="logo-symbol">
+                        N
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong>
+                            NEX MOVE
+                        </strong>
+
+                        <span>
+                            LOGISTICS LIMITED
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+
+                    Your cargo, our commitment.
+
+                    <br>
+
+                    Professional transport,
+                    logistics and fleet solutions.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#why-us">
+                    Why Us
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Services
+                </h4>
+
+                <a href="#services">
+                    Transport
+                </a>
+
+                <a href="#services">
+                    Logistics
+                </a>
+
+                <a href="#services">
+                    Fleet Solutions
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="tel:+254728549825">
+                    +254 728 549 825
+                </a>
+
+                <a href="mailto:pndonye08@gmail.com">
+                    pndonye08@gmail.com
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-content">
+
+                <p>
+                    © 2026 Nex Move Logistics Limited.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Your Cargo. Our Commitment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
 </body>
+
+
 </html>
